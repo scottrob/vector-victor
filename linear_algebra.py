@@ -23,3 +23,18 @@ def vector_sum(*args):
     if max(lengthy) != min(lengthy):
         raise ShapeError
     return[sum(x) for x in zip(*args)]
+
+def dot(*args):
+    return[sum(x, 0) * (x, 1) for x in args]
+
+def vector_multiply(value,other):
+    product = [x*x for x in (value,other)]
+    return product
+
+def vector_mean(value,other):
+    return[x for x in (value,other)]
+    pass
+
+def magnitude(value,other):
+    (value**2 + other**2)**.5
+    pass

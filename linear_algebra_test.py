@@ -75,31 +75,31 @@ def test_vector_sum_checks_shapes():
     vector_sum(v, w, m, y)
 
 
-# def test_dot():
-#     """
-#     dot([a b], [c d])   = a * c + b * d
-#     dot(Vector, Vector) = Scalar
-#     """
-#     assert dot(w, y) == 160
-#     assert dot(m, n) == 15
-#     assert dot(u, z) == 0
-#
-#
+def test_dot():
+    """
+    dot([a b], [c d])   = a * c + b * d
+    dot(Vector, Vector) = Scalar
+    """
+    assert dot(w, y) == 160
+    assert dot(m, n) == 15
+    assert dot(u, z) == 0
+
+
 # @raises(ShapeError)
 # def test_dot_checks_shapes():
 #     """Shape rule: the vectors must be the same size."""
 #     dot(v, m)
 #
 #
-# def test_vector_multiply():
-#     """
-#     [a b]  *  Z     = [a*Z b*Z]
-#     Vector * Scalar = Vector
-#     """
-#     assert vector_multiply(v, 0.5) == [0.5, 1.5, 0]
-#     assert vector_multiply(m, 2) == [6, 8]
-#
-#
+def test_vector_multiply():
+    """
+    [a b]  *  Z     = [a*Z b*Z]
+    Vector * Scalar = Vector
+    """
+    assert vector_multiply(v, 0.5) == [0.5, 1.5, 0]
+    assert vector_multiply(m, 2) == [6, 8]
+
+
 # def test_vector_mean():
 #     """
 #     mean([a b], [c d]) = [mean(a, c) mean(b, d)]
@@ -121,8 +121,33 @@ def test_vector_sum_checks_shapes():
 #     assert magnitude(v) == math.sqrt(10)
 #     assert magnitude(y) == math.sqrt(1400)
 #     assert magnitude(z) == 0
-#
-#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # A = [[1, 0, 0],
 #      [0, 1, 0],
 #      [0, 0, 1]]
@@ -134,20 +159,6 @@ def test_vector_sum_checks_shapes():
 #      [1, 2]]
 # D = [[1, 2, 3],
 #      [3, 2, 1]]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # ADVANCED MODE TESTS BELOW
 # UNCOMMENT THEM FOR ADVANCED MODE!
 #
